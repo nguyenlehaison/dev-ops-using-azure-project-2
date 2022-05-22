@@ -1,11 +1,12 @@
-name: Python app test with Github Actions
+name: Python application test with Github Actions
 
 on: [push]
 
 jobs:
   build:
-    runs-on: ubuntu-lasted
-    
+
+    runs-on: ubuntu-latest
+
     steps:
     - uses: actions/checkout@v3
     - name: Set up Python 3.5
@@ -21,6 +22,3 @@ jobs:
     - name: Test with pytest
       run: |
         make test
-    - name: Format code
-      run: |
-        make format
