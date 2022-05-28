@@ -8,16 +8,16 @@ trigger:
 
 variables:
   # Azure Resource Manager connection created during pipeline creation
-  azureServiceConnectionId: 'af83cca0-193e-4ad7-9eca-38efcbef1410'
+  azureServiceConnectionId: 'c0a8acf1-bebc-4a48-b2c4-b7f7d61fd0b6'
 
   # Web app name
-  webAppName: 'huy-ng-prj-2'
+  webAppName: 'myserviceconnection'
 
   # Agent VM image name
   vmImageName: 'Ubuntu-18.04'
 
   # Environment name
-  environmentName: 'huy-ng-prj-2'
+  environmentName: 'myserviceconnection'
 
   # Project root folder. Point to the folder containing manage.py file.
   projectRoot: $(System.DefaultWorkingDirectory)
@@ -88,7 +88,7 @@ stages:
             displayName: 'Use Python version'
 
           - task: AzureWebApp@1
-            displayName: 'Deploy Azure Web App : huy-ng-prj-2'
+            displayName: 'Deploy Azure Web App : myserviceconnection'
             inputs:
               azureSubscription: $(azureServiceConnectionId)
               appName: $(webAppName)
