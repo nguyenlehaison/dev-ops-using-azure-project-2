@@ -6,6 +6,8 @@
 trigger:
 - main
 
+pool: myAgentPool
+
 variables:
   # Azure Resource Manager connection created during pipeline creation
   azureServiceConnectionId: 'af83cca0-193e-4ad7-9eca-38efcbef1410'
