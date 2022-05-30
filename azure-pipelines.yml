@@ -14,7 +14,7 @@ variables:
   webAppName: 'huy-ng-prj-2'
 
   # Agent VM image name
-  vmImageName: 'Ubuntu-18.04'
+  vmImageName: 'myAgentPool'
 
   # Environment name
   environmentName: 'huy-ng-prj-2'
@@ -30,7 +30,8 @@ stages:
   displayName: Build stage
   jobs:
   - job: BuildJob
-    pool: myAgentPool
+    pool:
+      vmImage: $(vmImageName)
     steps:
     - task: UsePythonVersion@0
       inputs:
