@@ -3,7 +3,7 @@ install:
 		python3.7 -m pip install -r requirements.txt
 
 test:
-	python -m pytest -vv test_hello.py
+	python3.7 -m pytest -vv test_hello.py
 
 lint:
 	pylint hello.py
