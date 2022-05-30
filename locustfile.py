@@ -14,7 +14,7 @@ class WebsiteTestUser(HttpUser):
 
     @task(1)
     def index(self):
-        self.client.get("https://jc-my-ml-app.azurewebsites.net/")
+        self.client.get("https://https://huy-ng-prj-2.azurewebsites.net/")
 
     @task(2)
     def predict(self):
