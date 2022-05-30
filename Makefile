@@ -4,5 +4,3 @@ install:
 
 test:
 	python3.7 -m pytest -vv test_hello.py
-
-all: install lint test
