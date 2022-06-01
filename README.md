@@ -58,6 +58,11 @@ Note3: the ServiceConnection ID is the number before the name `huy-ng-prj-2` of 
 az webapp up -n <name of webapp> --location eastus --sku B1
 ```
 
+* Important you need to create a self host agent pool to handle your pipeline
+> Create your own Azure Virtual Machine with following step in Udacity CD part
+> Config this Agent Pool in project settings
+
+
 * In  your new Project in Azure DevOps, go to Pipelines -->New Pipeline --> GitHub --> Select Your Repo --> select `an Existing YAML file`
 
 > Choose the `main` branch and the file named `azure-pipelines.yml` as is showed on the figure below
