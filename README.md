@@ -4,6 +4,7 @@
 
 [![Python application test with Github Actions](https://github.com/huy-js/udacity-project-2/actions/workflows/pythonapp.yml/badge.svg)](https://github.com/huy-js/udacity-project-2/actions/workflows/pythonapp.yml)
 
+[![Build Status](https://dev.azure.com/huycntt/udacity-project-2/_apis/build/status/huy-js.udacity-project-2?branchName=main)](https://dev.azure.com/huycntt/udacity-project-2/_build/latest?definitionId=17&branchName=main)
 
 * First of all set up SSH Keys in your azure cloud shell, add the `id_rsa.pub` key to your GitHub repo ( ssh keys)  and then clone the project there.
 
@@ -11,10 +12,8 @@
 ssh-keygen -t rsa
 cat ~/.ssh/id_rsa.pub
 ```
-* Create another branch to develop and switching to this branch
-```sh
-git checkout github-actions
-```
+
+![alt text](https://github.com/huy-js/udacity-project-2/blob/main/images/clonecode.png)
 
 checkout your new branch
 ```sh
@@ -32,6 +31,8 @@ source ~/.myrepo/bin/activate
 ```sh
 make all
 ```
+
+![alt text](https://github.com/huy-js/udacity-project-2/blob/main/images/make%20all.png)
 
 * Next set up Github Actions in your repo doign this :
 
@@ -57,6 +58,8 @@ Note3: the ServiceConnection ID is the number before the name `huy-ng-prj-2` of 
 ```sh
 az webapp up -n <name of webapp> --location eastus --sku B1
 ```
+![alt text](https://github.com/huy-js/udacity-project-2/blob/main/images/app_service.png)
+
 
 * Important you need to create a self host agent pool to handle your pipeline
 > Create your own Azure Virtual Machine with following step in Udacity CD part
@@ -72,6 +75,8 @@ az webapp up -n <name of webapp> --location eastus --sku B1
 > Modifications are at variables webAppName & environmentName too !!!
 
 * Choose Run Pipeline and your Azure DevOps Pipeline is going to start to be deployed with all his stages ( in this case 2: Build & deploy)
+
+![alt text](https://github.com/huy-js/udacity-project-2/blob/main/images/custom-yaml-file-with-your-information.png)
 
 * Perform a cosmetic change to your app.py , so you can see your CI/CD pipelines in action on Azure DevOps ( CD) & GitHub Actions (CI)
 
