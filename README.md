@@ -62,6 +62,8 @@ az webapp up -n <name of webapp> --location eastus --sku B1
 > Create your own Azure Virtual Machine with following step in Udacity CD part
 > Config this Agent Pool in project settings
 
+![alt text](https://github.com/huy-js/udacity-project-2/blob/main/images/agentpool.png)
+
 
 * In  your new Project in Azure DevOps, go to Pipelines -->New Pipeline --> GitHub --> Select Your Repo --> select `an Existing YAML file`
 
