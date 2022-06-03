@@ -106,6 +106,7 @@ git push origin main
 ```sh
 https://huy-ng-prj-2.azurewebsites.net/
 ```
+![alt text](https://github.com/huy-js/udacity-project-2/blob/main/images/change%20to%20rest%20api.png)
 
  Update the file `make_predict_azure_app.sh` with the webapp service end point
 
@@ -136,6 +137,8 @@ Port: 443
 >from there you can see how the load testing is performing and how you app established on a # of RPS
 > This is good to know how good is your webapp and your plan to manage the requests. So you can decide to scale up the plan service of your webapp for example.
 -> Locust could generate a stats report.
+
+![alt text](https://github.com/huy-js/udacity-project-2/blob/main/images/locust.png)
 
 ## CLEANING OUT
 
