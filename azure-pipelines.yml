@@ -14,7 +14,7 @@ variables:
   webAppName: 'hsonnl-project-2'
 
   # Agent VM image name
-  vmImageName: 'Default'
+  vmImageName: 'firstAgentPool'
 
   # Environment name
   environmentName: 'hsonnl-project-2'
