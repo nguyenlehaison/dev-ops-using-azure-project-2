@@ -16,6 +16,7 @@ variables:
   # Agent VM image name
   vmImageName: 'myAgentPools'
 
+
   # Environment name
   environmentName: 'hsonnl-project-2'
 
@@ -32,11 +33,16 @@ stages:
   - job: BuildJob
     pool: $(vmImageName)
     steps:
+    # - task: UsePythonVersion@0
+    #   inputs:
+    #     versionSpec: '$(pythonVersion)'
+    #   displayName: 'Use Python $(pythonVersion)'
     - task: UsePythonVersion@0
       inputs:
-        versionSpec: '$(pythonVersion)'
-      displayName: 'Use Python $(pythonVersion)'
-    
+        versionSpec: '3.x'
+        disableDownloadFromRegistry: true
+        addToPath: true
+        architecture: 'x64'
     - script: |
         python3.7 -m venv antenv
         source antenv/bin/activate
