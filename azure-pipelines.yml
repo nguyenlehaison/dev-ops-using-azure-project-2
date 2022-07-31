@@ -33,15 +33,15 @@ stages:
   - job: BuildJob
     pool: $(vmImageName)
     steps:
-    # - task: UsePythonVersion@0
-    #   inputs:
-    #     versionSpec: '$(pythonVersion)'
-    #   displayName: 'Use Python $(pythonVersion)'
     - task: UsePythonVersion@0
       inputs:
-        versionSpec: '3.7'
-        disableDownloadFromRegistry: true
-        addToPath: true
+        versionSpec: '$(pythonVersion)'
+      displayName: 'Use Python $(pythonVersion)'
+    # - task: UsePythonVersion@0
+    #   inputs:
+    #     versionSpec: '3.7'
+    #     disableDownloadFromRegistry: true
+    #     addToPath: true
     - script: |
         python3 -m venv antenv
         source antenv/bin/activate
