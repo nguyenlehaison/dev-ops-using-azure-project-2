@@ -32,7 +32,6 @@ stages:
   jobs:
   - job: BuildJob
     pool: $(vmImageName)
-      vmImage: 'ubuntu-latest'
     steps:
     - task: UsePythonVersion@0
       inputs:
