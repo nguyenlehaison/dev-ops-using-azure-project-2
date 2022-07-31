@@ -24,7 +24,7 @@ variables:
   projectRoot: $(System.DefaultWorkingDirectory)
   
   # Python version: 3.7
-  pythonVersion: '3.7.4'
+  pythonVersion: '3.7.13'
 
 stages:
 - stage: Build
@@ -39,7 +39,7 @@ stages:
     #   displayName: 'Use Python $(pythonVersion)'
     - task: UsePythonVersion@0
       inputs:
-        versionSpec: '3.7'
+        versionSpec: '3.7.13'
         disableDownloadFromRegistry: true
         addToPath: true
         architecture: 'x64'
